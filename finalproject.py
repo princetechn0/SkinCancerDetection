@@ -45,7 +45,6 @@ from skimage.io import imread_collection
 
 
 
-#Functions
 ## Helpful Functions for Tensorflow
 # Encode text values to dummy variables(i.e. [1,0,0],[0,1,0],[0,0,1] for red,green,blue)
 def encode_text_dummy(df, name):

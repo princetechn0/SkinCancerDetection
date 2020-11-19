@@ -64,19 +64,50 @@ The system is a composition of data preprocessing, splitting the data into train
 
 ### Here we test image samples vs their true labels: 
 
-![image](https://user-images.githubusercontent.com/13923942/99603067-6da1b400-29b7-11eb-8819-7af5e9e71f65.png)
+![image](https://user-images.githubusercontent.com/13923942/99603067-6da1b400-29b7-11eb-8819-7af5e9e71f65.png) : Correct
 
-![image](https://user-images.githubusercontent.com/13923942/99603091-77c3b280-29b7-11eb-8067-d07763ac4d23.png)
+![image](https://user-images.githubusercontent.com/13923942/99603091-77c3b280-29b7-11eb-8067-d07763ac4d23.png) : Incorrect 
 
-![image](https://user-images.githubusercontent.com/13923942/99603110-7eeac080-29b7-11eb-8c1f-3723171bdf90.png)
+![image](https://user-images.githubusercontent.com/13923942/99603110-7eeac080-29b7-11eb-8c1f-3723171bdf90.png) : Correct 
 
-![image](https://user-images.githubusercontent.com/13923942/99603117-84480b00-29b7-11eb-870e-efc0a430b7c1.png)
+![image](https://user-images.githubusercontent.com/13923942/99603117-84480b00-29b7-11eb-870e-efc0a430b7c1.png) : Correct
 
-![image](https://user-images.githubusercontent.com/13923942/99603126-89a55580-29b7-11eb-9f87-08f0770eb454.png)
-
-
-
+![image](https://user-images.githubusercontent.com/13923942/99603126-89a55580-29b7-11eb-9f87-08f0770eb454.png) : Correct
+ 
 
 
+### CNN / Transfer Learning
+
+![image](https://user-images.githubusercontent.com/13923942/99603205-b0fc2280-29b7-11eb-90da-2b1e377753cc.png)
+
+
+#### The Relu / Adam combination produced the most accurate results. 
+
+### Here we test image samples vs their true labels: 
+
+![image](https://user-images.githubusercontent.com/13923942/99603247-c5401f80-29b7-11eb-98e0-4e0af152b715.png) : Correct
+
+![image](https://user-images.githubusercontent.com/13923942/99603260-cbce9700-29b7-11eb-9a33-159221902bc2.png) : Incorrect 
+
+![image](https://user-images.githubusercontent.com/13923942/99603307-e0ab2a80-29b7-11eb-8878-33f11cfc1fc8.png) : Correct 
+
+![image](https://user-images.githubusercontent.com/13923942/99603328-e739a200-29b7-11eb-99d6-1dfe1f8d4480.png) : Correct
+
+![image](https://user-images.githubusercontent.com/13923942/99603126-89a55580-29b7-11eb-9f87-08f0770eb454.png) : Correct
+
+
+
+# Conclusion 
+Based upon the results, the neural network was accurate approximately 70% of the time. The system was more accurate at  predicting Vascular Lesions, Melanoma, and Actinic Keratoses, simply due to the disproportionate dataset. 
+
+Comparing the two models, the CNN without transfer learning had significantly faster runtime. The tests were run on my local machine, which might be the reason for why the CNN with transfer learning took almost 15x longer to complete training. However, even with the extra time to compile, the accuracy between the two models was quite similar, approximately, though the model with transfer learning made some predictions that were more accurate than the other model. All in all, in a practical sense, training the model with transfer learning ( more data ) should, in theory, improve the results, which is what can be seen here. 
+
+
+
+# Learning Experience
+
+At first, I was unsure of which dataset to use. I definitely am appreciative now of the immense datasets available online to use for our models. If it weren’t for that, finding suitable data to use would have been a nightmare. My first couple of days trying to find data were unsuccessful, so I attempted to webscrape a few sites for their images, and the issue arose in that the images were either all watermarked, not labeled, or a combination of both.
+
+I also learned of the importance of using AI to garner accurate results. In a situation like this, which if a patient were to rely on to detect skin cancer, the results may or may not be suitable to use. Especially when death is a potential outcome for an incorrect result, relying on AI to detect something like skin cancer can be risky if the model if not the most pristine, suited model. Therefore, I have definitely come to see the vital nature of finding accurate data and applying it correctly.   
 
 

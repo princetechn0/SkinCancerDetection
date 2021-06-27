@@ -1,4 +1,5 @@
 # Skin Cancer Detection
+Can we detect skin cancer through artificial intelligence?
 
 
 ## Skin Cancer Neural Network Detection using Tensorflow and CNN Learning
